@@ -114,7 +114,7 @@ export function PortfolioPage({
                       </div>
                       <p className="work-description">{projectContent.description}</p>
                       <div className="work-ctas">
-                        {project.caseStudyUrl && <Link className="work-cta" href={project.caseStudyUrl}>{projectContent.caseStudy}</Link>}
+                        {project.caseStudyUrls && <Link className="work-cta" href={project.caseStudyUrls[locale]}>{projectContent.caseStudy}</Link>}
                         {project.websiteUrl && <a className="work-cta" href={project.websiteUrl} target="_blank" rel="noopener noreferrer">{projectContent.visit}</a>}
                       </div>
                     </article>

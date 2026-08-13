@@ -19,7 +19,7 @@ export type WorkProject = {
   title: string;
   technologies: string[];
   previewImage: string;
-  caseStudyUrl?: string;
+  caseStudyUrls?: Record<Locale, string>;
   websiteUrl?: string;
   localized: Record<Locale, { category: string; description: string; caseStudy: string; visit: string; previewAlt: string }>;
 };
@@ -35,6 +35,7 @@ export const workProjects: WorkProject[] = [
     title: "PERSONAL PORTFOLIO",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Agentic Development"],
     previewImage: "/angelo-roic-portfolio-preview.png",
+    caseStudyUrls: { en: "/work/personal-portfolio", hr: "/hr/work/personal-portfolio" },
     websiteUrl: "https://angeloroic.com",
     localized: {
       en: {
