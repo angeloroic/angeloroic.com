@@ -141,13 +141,15 @@ a:focus-visible, summary:focus-visible {
 @media (max-width: 639px) {
   :root { --page-gutter: clamp(1.25rem, 5vw, 1.5rem); --section-space: 3.25rem; }
   .nav { height: 70px; }
-  .wordmark { flex: 0 0 auto; white-space: nowrap; font-size: .91rem; }
+  .wordmark { display: inline-flex; min-height: 48px; align-items: center; flex: 0 0 auto; white-space: nowrap; font-size: .91rem; }
   .nav-side { gap: .55rem; }
   .case-nav .wordmark { font-size: .91rem; }
   .case-nav-side { gap: .8rem; }
   .case-work-link { min-height: 44px; font-size: .68rem; }
   .nav-links { display: none; }
-  .locale-switch { padding-left: 0; gap: .5rem; border-left: 0; }
+  .locale-switch { padding-left: 0; gap: 0; border-left: 0; }
+  .locale-switch a { display: inline-flex; width: 48px; min-height: 48px; align-items: center; justify-content: center; }
+  .contact-links a[href^="mailto:"] { min-width: 48px; min-height: 48px; }
   .mobile-menu { position: relative; display: block; }
   .mobile-menu summary { display: grid; width: 44px; height: 44px; place-content: center; gap: 4px; list-style: none; cursor: pointer; }
   .mobile-menu summary::-webkit-details-marker { display: none; }
@@ -217,7 +219,8 @@ a:focus-visible, summary:focus-visible {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hero > *, .section { animation: enter .6s both; }
-  .section { animation-timeline: view(); animation-range: entry 8% cover 22%; }
+  .hero > * { animation: enter .6s both; }
+  .section { animation: section-enter .6s both; animation-timeline: view(); animation-range: entry 8% cover 22%; }
 }
 @keyframes enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes section-enter { from { transform: translateY(12px); } to { transform: translateY(0); } }
