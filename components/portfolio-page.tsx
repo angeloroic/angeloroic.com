@@ -68,7 +68,7 @@ export function PortfolioPage({
                   src="/angelo-roic-conference.png"
                   alt="Angelo Roic speaking at a conference"
                   fill
-                  sizes="(min-width: 1200px) 22vw, (min-width: 640px) 360px, 100vw"
+                  sizes="(min-width: 1445px) 260px, (min-width: 1223px) 18vw, (min-width: 1200px) 220px, (min-width: 1091px) 240px, (min-width: 1024px) 22vw, (min-width: 840px) 210px, (min-width: 760px) 25vw, (min-width: 640px) 190px, (min-width: 382px) 145px, (min-width: 342px) 38vw, 130px"
                 />
               </div>
             </div>
