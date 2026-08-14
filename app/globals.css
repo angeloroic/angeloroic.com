@@ -108,7 +108,7 @@ a:focus-visible, summary:focus-visible {
 .areas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--border); }
 .area { min-height: 240px; padding: 2rem 2rem 2.3rem 0; border-bottom: 1px solid var(--border); }
 .area:nth-child(even) { padding-left: 2rem; border-left: 1px solid var(--border); }
-.area h3 { margin: 0 0 1.45rem; color: var(--purple-heading); font-family: var(--font-ibm-plex-mono), monospace; font-size: .72rem; font-weight: 600; letter-spacing: .1em; }
+.area h3 { margin: 0 0 1.45rem; color: var(--purple-heading); font-family: var(--font-ibm-plex-mono), monospace; font-size: 1rem; font-weight: 600; letter-spacing: .1em; }
 
 .area ul { display: flex; flex-wrap: wrap; gap: .65rem 1rem; margin: 0; padding: 0; list-style: none; color: var(--foreground); font-size: 1rem; line-height: 1.45; }
 .area li:not(:last-child)::after { content: "\00B7"; display: inline-block; margin-left: .85rem; color: var(--teal); font-size: 2em; line-height: 0; vertical-align: -.2em; }
