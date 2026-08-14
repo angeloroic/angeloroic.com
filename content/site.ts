@@ -100,7 +100,7 @@ export const croatianContent: SiteContent = {
   nav: { about: "O meni", work: "Radovi", experience: "Iskustvo", contact: "Kontakt" },
   hero: {
     title: "Digitalni marketing.\nModerni web development.\nAgentic AI.",
-    copy: "14+ godina iskustva u digitalnom marketingu, danas povezano s modernim razvojem i radnim tokovima pokretanima umjetnom inteligencijom za izradu pametnijih digitalnih proizvoda.",
+    copy: "14+ godina iskustva u digitalnom marketingu, danas povezano s modernim web developmentom i AI automatizacijom za izradu pametnijih digitalnih proizvoda.",
     cta: "Pogledajte moje radove ↓",
   },
   about: {
@@ -108,7 +108,7 @@ export const croatianContent: SiteContent = {
     paragraphs: [
       "Posljednjih 14+ godina radio sam u različitim područjima digitalnog marketinga, od SEO-a i izrade web-stranica do plaćenog oglašavanja, performance marketinga, e-trgovine i regrutacije.",
       "Tijekom godina vodio sam i optimizirao kampanje velikog opsega, radio i na affiliate i na oglašivačkoj strani industrije te se u novije vrijeme posvetio regrutaciji, gdje svoje iskustvo iz industrije koristim za prepoznavanje i procjenu kandidata za tvrtke usmjerene na rezultate.",
-      "Danas to iskustvo proširujem modernim web developmentom i agentic AI-jem, izrađujući web-stranice, digitalne proizvode i radne tokove pokretane umjetnom inteligencijom koji spajaju tehnologiju s marketinškim razumijevanjem onoga što uistinu donosi rezultate.",
+      "Danas to iskustvo proširujem modernim web developmentom i agentic AI-jem, izrađujući web-stranice, digitalne proizvode i AI automatizacije koje spajaju tehnologiju s marketinškim razumijevanjem onoga što uistinu donosi rezultate.",
     ],
   },
   work: { label: "Projekti" },
