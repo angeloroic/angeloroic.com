@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FooterCopyright } from "@/components/footer-copyright";
 import { workProjects, type Locale, type SiteContent } from "@/content/site";
 
 const contacts = {
@@ -19,6 +20,7 @@ export function PortfolioPage({
 }) {
   const completedProjects = workProjects.filter((project) => project.completed);
   const hasWork = completedProjects.length > 0;
+  const footerYear = Number(content.footer.copyright.match(/\d{4}/)?.[0]);
 
   return (
     <div lang={locale}>
@@ -160,7 +162,7 @@ export function PortfolioPage({
       </main>
 
       <footer className="shell footer">
-        <span>{content.footer.copyright}</span>
+        <span><FooterCopyright copyright={content.footer.copyright} fallbackYear={footerYear} /></span>
         <span>{content.footer.location}</span>
       </footer>
     </div>
