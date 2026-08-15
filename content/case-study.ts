@@ -83,7 +83,7 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
     sections: {
       overview: {
         label: "PREGLED",
-        text: "Cilj je bio izraditi fokusiranu osobnu digitalnu prisutnost koja predstavlja iskustvo, sposobnosti i trenutačni smjer bez nepotrebnog vizualnog šuma.",
+        text: "Cilj je bio izraditi fokusiran osobni portfolio koji jasno predstavlja iskustvo, sposobnosti i trenutačni smjer bez nepotrebnog vizualnog šuma.",
       },
       approach: {
         label: "DIZAJNERSKI PRISTUP",
