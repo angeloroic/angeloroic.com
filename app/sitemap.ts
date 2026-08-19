@@ -30,5 +30,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: `${siteUrl}/work/adverdose`,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/work/adverdose`,
+          hr: `${siteUrl}/hr/work/adverdose`,
+        },
+      },
+    },
+    {
+      url: `${siteUrl}/hr/work/adverdose`,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/work/adverdose`,
+          hr: `${siteUrl}/hr/work/adverdose`,
+        },
+      },
+    },
   ];
 }

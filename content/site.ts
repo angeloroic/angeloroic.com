@@ -19,9 +19,11 @@ export type WorkProject = {
   title: string;
   technologies: string[];
   previewImage: string;
+  previewAvailable: boolean;
   caseStudyUrls?: Record<Locale, string>;
   websiteUrl?: string;
-  localized: Record<Locale, { category: string; description: string; caseStudy: string; visit: string; previewAlt: string }>;
+  codeUrl?: string;
+  localized: Record<Locale, { category: string; description: string; caseStudy: string; visit: string; code: string; previewAlt: string; previewPlaceholder: string }>;
 };
 
 // Adding a completed project here automatically exposes the Work section and
@@ -35,22 +37,61 @@ export const workProjects: WorkProject[] = [
     title: "PERSONAL PORTFOLIO",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Agentic Development"],
     previewImage: "/angelo-roic-portfolio-preview.png",
+    previewAvailable: true,
     caseStudyUrls: { en: "/work/personal-portfolio", hr: "/hr/work/personal-portfolio" },
     websiteUrl: "https://angeloroic.com",
+    codeUrl: "https://github.com/angeloroic/angeloroic.com",
     localized: {
       en: {
         category: "WEB DEVELOPMENT",
         description: "A bilingual personal portfolio designed and built as a fast, responsive website with a strong focus on typography, accessibility, SEO and clean user experience.",
         caseStudy: "View case study →",
-        visit: "Visit live site ↗",
+        visit: "View live site ↗",
+        code: "View code ↗",
         previewAlt: "Preview of Angelo Roic personal portfolio website",
+        previewPlaceholder: "Screenshot to be added",
       },
       hr: {
         category: "WEB DEVELOPMENT",
         description: "Dvojezični osobni portfolio dizajniran i izrađen kao brza i responzivna web stranica, s posebnim naglaskom na tipografiju, pristupačnost, SEO i čisto korisničko iskustvo.",
-        caseStudy: "Pogledaj projekt →",
-        visit: "Posjeti web-stranicu ↗",
+        caseStudy: "Pogledaj case study →",
+        visit: "Pogledaj live site ↗",
+        code: "Pogledaj kod ↗",
         previewAlt: "Pregled osobnog portfolija Angela Roica",
+        previewPlaceholder: "Snimka zaslona će biti dodana",
+      },
+    },
+  },
+  {
+    slug: "adverdose",
+    completed: true,
+    index: "02",
+    category: "web-development",
+    title: "Adverdose",
+    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "Git", "GitHub Pages"],
+    previewImage: "/adverdose-desktop.png",
+    previewAvailable: true,
+    caseStudyUrls: { en: "/work/adverdose", hr: "/hr/work/adverdose" },
+    websiteUrl: "https://angeloroic.github.io/adverdose/",
+    codeUrl: "https://github.com/angeloroic/adverdose",
+    localized: {
+      en: {
+        category: "WEB DEVELOPMENT",
+        description: "A responsive marketing website built from scratch with HTML, CSS and JavaScript.",
+        caseStudy: "View case study →",
+        visit: "View live site ↗",
+        code: "View code ↗",
+        previewAlt: "Desktop screenshot of the Adverdose marketing website",
+        previewPlaceholder: "Screenshot to be added",
+      },
+      hr: {
+        category: "WEB DEVELOPMENT",
+        description: "Responsive marketinška web-stranica izrađena od nule koristeći HTML, CSS i JavaScript.",
+        caseStudy: "Pogledaj case study →",
+        visit: "Pogledaj live site ↗",
+        code: "Pogledaj kod ↗",
+        previewAlt: "Desktop snimka zaslona marketinške web-stranice Adverdose",
+        previewPlaceholder: "Snimka zaslona će biti dodana",
       },
     },
   },

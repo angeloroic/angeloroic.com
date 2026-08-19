@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { caseStudyContent } from "@/content/case-study";
+import { adverdoseCaseStudyContent } from "@/content/case-study";
 import type { Locale } from "@/content/site";
 
-const liveSiteUrl = "https://angeloroic.com";
-const codeUrl = "https://github.com/angeloroic/angeloroic.com";
+const liveSiteUrl = "https://angeloroic.github.io/adverdose/";
+const codeUrl = "https://github.com/angeloroic/adverdose";
 
-export function CaseStudyPage({ locale }: { locale: Locale }) {
-  const content = caseStudyContent[locale];
+export function AdverdoseCaseStudyPage({ locale }: { locale: Locale }) {
+  const content = adverdoseCaseStudyContent[locale];
   const paths = locale === "en"
-    ? { home: "/", work: "/#work", caseStudy: "/work/personal-portfolio", alternate: "/hr/work/personal-portfolio" }
-    : { home: "/hr", work: "/hr#work", caseStudy: "/hr/work/personal-portfolio", alternate: "/work/personal-portfolio" };
+    ? { home: "/", work: "/#work", caseStudy: "/work/adverdose", alternate: "/hr/work/adverdose" }
+    : { home: "/hr", work: "/hr#work", caseStudy: "/hr/work/adverdose", alternate: "/work/adverdose" };
 
   return (
     <div lang={locale}>
@@ -46,7 +46,7 @@ export function CaseStudyPage({ locale }: { locale: Locale }) {
               <dl className="case-facts">
                 <div><dt>{content.facts.role}</dt><dd>{content.facts.roleValue}</dd></div>
                 <div><dt>{content.facts.stack}</dt><dd>{content.facts.stackValue}</dd></div>
-                <div><dt>{content.facts.workflow}</dt><dd>{content.facts.workflowValue}</dd></div>
+                <div><dt>{content.facts.delivery}</dt><dd>{content.facts.deliveryValue}</dd></div>
               </dl>
             </div>
           </div>
@@ -55,10 +55,7 @@ export function CaseStudyPage({ locale }: { locale: Locale }) {
         <section className="case-section" aria-labelledby="approach-heading">
           <div className="shell case-grid">
             <h2 className="section-title" id="approach-heading">{content.sections.approach.label}</h2>
-            <div className="case-body">
-              <p>{content.sections.approach.text}</p>
-              <ul className="case-points">{content.sections.approach.points.map((point) => <li key={point}>{point}</li>)}</ul>
-            </div>
+            <div className="case-body"><p>{content.sections.approach.text}</p></div>
           </div>
         </section>
 
@@ -68,28 +65,17 @@ export function CaseStudyPage({ locale }: { locale: Locale }) {
             <div className="case-body">
               <p>{content.sections.responsive.text}</p>
               <div className="case-screenshots">
-                <figure><figcaption>{content.sections.responsive.desktop}</figcaption><div className="case-screen case-screen-desktop"><Image src="/angelo-roic-portfolio-preview.png" alt={content.sections.responsive.desktopAlt} fill loading="eager" sizes="(min-width: 1200px) 52vw, 100vw" /></div></figure>
-                <figure><figcaption>{content.sections.responsive.mobile}</figcaption><div className="case-screen case-screen-mobile"><Image src="/angelo-roic-portfolio-mobile-preview.png" alt={content.sections.responsive.mobileAlt} fill sizes="(min-width: 640px) 31vw, 100vw" /></div></figure>
+                <figure><figcaption>{content.sections.responsive.desktop}</figcaption><div className="case-screen case-screen-desktop"><Image src="/adverdose-desktop.png" alt={content.sections.responsive.desktopAlt} fill sizes="(min-width: 1200px) 45vw, (min-width: 640px) 50vw, 100vw" /></div></figure>
+                <figure><figcaption>{content.sections.responsive.mobile}</figcaption><div className="case-screen case-screen-mobile"><Image src="/adverdose-mobile.png" alt={content.sections.responsive.mobileAlt} fill sizes="(min-width: 1200px) 15vw, (min-width: 640px) 24vw, 58vw" /></div></figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="case-section" aria-labelledby="localization-heading">
+        <section className="case-section" aria-labelledby="development-heading">
           <div className="shell case-grid">
-            <h2 className="section-title" id="localization-heading">{content.sections.localization.label}</h2>
-            <div className="case-body"><p>{content.sections.localization.text}</p><ul className="case-points">{content.sections.localization.points.map((point) => <li key={point}>{point}</li>)}</ul></div>
-          </div>
-        </section>
-
-        <section className="case-section" aria-labelledby="agentic-heading">
-          <div className="shell case-grid">
-            <h2 className="section-title" id="agentic-heading">{content.sections.agentic.label}</h2>
-            <div className="case-body">
-              <p>{content.sections.agentic.text}</p>
-              <ol className="case-flow">{content.sections.agentic.steps.map((step) => <li key={step}>{step}</li>)}</ol>
-              <ul className="case-validation">{content.sections.agentic.validation.map((item) => <li key={item}>{item}</li>)}</ul>
-            </div>
+            <h2 className="section-title" id="development-heading">{content.sections.development.label}</h2>
+            <div className="case-body"><p>{content.sections.development.text}</p></div>
           </div>
         </section>
 

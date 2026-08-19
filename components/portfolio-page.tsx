@@ -107,17 +107,22 @@ export function PortfolioPage({
                       <h3>{project.title}</h3>
                       <p className="work-meta">{project.technologies.join(" · ")}</p>
                       <div className="work-preview">
-                        <Image
-                          src={project.previewImage}
-                          alt={projectContent.previewAlt}
-                          fill
-                          sizes="(min-width: 1200px) 72vw, (min-width: 640px) 86vw, 100vw"
-                        />
+                        {project.previewAvailable ? (
+                          <Image
+                            src={project.previewImage}
+                            alt={projectContent.previewAlt}
+                            fill
+                            sizes="(min-width: 1200px) 72vw, (min-width: 640px) 86vw, 100vw"
+                          />
+                        ) : (
+                          <span className="visual-placeholder" role="img" aria-label={projectContent.previewAlt}>{projectContent.previewPlaceholder}</span>
+                        )}
                       </div>
                       <p className="work-description">{projectContent.description}</p>
                       <div className="work-ctas">
                         {project.caseStudyUrls && <Link className="work-cta" href={project.caseStudyUrls[locale]}>{projectContent.caseStudy}</Link>}
                         {project.websiteUrl && <a className="work-cta" href={project.websiteUrl} target="_blank" rel="noopener noreferrer">{projectContent.visit}</a>}
+                        {project.codeUrl && <a className="work-cta" href={project.codeUrl} target="_blank" rel="noopener noreferrer">{projectContent.code}</a>}
                       </div>
                     </article>
                   );
@@ -153,8 +158,8 @@ export function PortfolioPage({
               <p className="contact-copy">{content.contact.copy}</p>
               <div className="contact-links">
                 <a href={contacts.email}>{content.contact.email}</a>
-                <a href={contacts.linkedin} target="_blank" rel="noreferrer">{content.contact.linkedin}</a>
-                <a href={contacts.github} target="_blank" rel="noreferrer">{content.contact.github}</a>
+                <a href={contacts.linkedin} target="_blank" rel="noopener noreferrer">{content.contact.linkedin}</a>
+                <a href={contacts.github} target="_blank" rel="noopener noreferrer">{content.contact.github}</a>
               </div>
             </div>
           </div>
