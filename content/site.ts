@@ -167,7 +167,7 @@ export const croatianContent: SiteContent = {
     entries: [
       { dates: "2012 → 2017", role: "Samostalni stručnjak za digitalni marketing", description: "Počeo sam s affiliate marketingom, YouTubeom, SEO-om i WordPressom, izrađujući i pozicionirajući web-stranice prije dubljeg ulaska u plaćeno oglašavanje." },
       { dates: "2017 → danas", role: "Osnivač / vlasnik", company: "ROI Media", description: "Samostalni rad u digitalnom marketingu, tijekom godina usmjeren na performance marketing, plaćeno oglašavanje i digitalne projekte." },
-      { dates: "2022 → 2025", role: "Osnivač/Vlasnik", company: "Adverdose Ltd.", description: "Vodio sam britansku tvrtku za performance marketing te upravljao plaćenim oglašavanjem na Meta, Google i YouTube kanalima velikog opsega." },
+      { dates: "2022 → 2025", role: "Osnivač / vlasnik", company: "Adverdose Ltd.", description: "Vodio sam britansku tvrtku za performance marketing te upravljao plaćenim oglašavanjem na Meta, Google i YouTube kanalima velikog opsega." },
       { dates: "2024 → 2025", role: "Affiliate Manager", company: "LeadX Pro", description: "Upravljanje affiliate partnerima, kvaliteta prometa, izvedba kampanja i skaliranje u više vertikala performance marketinga." },
       { dates: "2026", role: "Data Analyst, E-commerce", company: "Tailored Canvases", description: "Analiza i optimizacija kampanja pomoću Triple Whalea u Meta oglašavanju velikog opsega." },
       { dates: "2026 → danas", role: "Specijalist za regrutaciju", company: "AffPal", description: "Regrutacija i procjena kandidata za tvrtke usmjerene na rezultate, uz primjenu opsežnog iskustva u affiliate marketingu i širem digitalnom marketingu." },

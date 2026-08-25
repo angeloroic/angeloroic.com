@@ -73,7 +73,7 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
     hero: {
       label: "WEB DEVELOPMENT · 2026",
       title: "OSOBNI PORTFOLIO",
-      intro: "Dvojezični osobni portfolio koji spaja iskustvo u digitalnom marketingu, moderni web development i agentic AI workflow.",
+      intro: "Dvojezični osobni portfolio koji spaja iskustvo u digitalnom marketingu s modernim web developmentom i agentic AI workflowima.",
       visit: "Pogledaj live site ↗",
       code: "Pogledaj kod ↗",
       heroAlt: "Desktop prikaz početne stranice osobnog portfolija Angela Roica",
@@ -91,7 +91,7 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
       approach: {
         label: "DIZAJNERSKI PRISTUP",
         text: "Vizualni sustav namjerno je suzdržan kako bi rad i profesionalna priča bili u prvom planu. Tipografija stvara hijerarhiju, a boja je rezervirana za orijentaciju i male naglaske.",
-        points: ["Minimalistička editorial estetika", "Snažna tipografija i jasna hijerarhija", "Suzdržani tirkizni i ljubičasti naglasci", "Dosljedan razmak i pristup usmjeren na sadržaj"],
+        points: ["Minimalistička editorialna estetika", "Snažna tipografija i jasna hijerarhija", "Suzdržani tirkizni i ljubičasti naglasci", "Dosljedan razmak i pristup usmjeren na sadržaj"],
       },
       responsive: {
         label: "RESPONZIVNI DIZAJN",
@@ -104,7 +104,7 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
       localization: {
         label: "LOKALIZACIJA I SEO",
         text: "Portfolio je dostupan na engleskom i hrvatskom jeziku, tako da je koristan ljudima i razumljiv tražilicama.",
-        points: ["Engleska i hrvatska verzija na / i /hr", "Lokalizirani naslovi, opisi i Open Graph metapodaci", "Ispravan jezik dokumenta, canonical URL-ovi i hreflang alternates"],
+        points: ["Engleska i hrvatska verzija na / i /hr", "Lokalizirani naslovi, opisi i Open Graph metapodaci", "Ispravan jezik dokumenta, canonical URL-ovi i hreflang oznake"],
       },
       agentic: {
         label: "AGENTIC DEVELOPMENT",
@@ -202,11 +202,11 @@ export const adverdoseCaseStudyContent: Record<Locale, AdverdoseCaseStudyContent
       },
       approach: {
         label: "DIZAJN",
-        text: "Vizualni smjer fokusiran je na čist i moderan izgled, snažnu tipografiju, jasnu hijerarhiju sadržaja i jednostavnu navigaciju. Layout je izrađen posebno za sadržaj projekta, bez prilagođavanja unaprijed gotovom templateu.",
+        text: "Vizualni smjer fokusiran je na čist, moderan izgled, snažnu tipografiju, jasnu hijerarhiju sadržaja i jednostavnu navigaciju. Layout je izrađen posebno za sadržaj projekta, bez prilagođavanja unaprijed gotovom templateu.",
       },
       responsive: {
         label: "RESPONSIVE DEVELOPMENT",
-        text: "Responsive ponašanje izrađeno je ručno pomoću custom media queryja za različite veličine ekrana. Layout, razmaci, tipografija i ponašanje elemenata prilagođeni su za desktop, tablet i mobilne uređaje kako bi iskustvo ostalo konzistentno bez korištenja frameworka.",
+        text: "Responsive ponašanje implementirano je ručno pomoću custom media queryja za različite veličine ekrana. Layout, razmaci, tipografija i ponašanje elemenata prilagođeni su za desktop, tablet i mobilne uređaje kako bi iskustvo ostalo konzistentno bez korištenja frameworka.",
         desktop: "DESKTOP",
         mobile: "MOBILNI",
         desktopAlt: "Desktop snimka zaslona marketinške web-stranice Adverdose",
