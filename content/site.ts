@@ -125,7 +125,7 @@ export const englishContent: SiteContent = {
   experience: {
     label: "Experience",
     entries: [
-      { dates: "2012 → 2017", role: "Independent Digital Marketer", description: "Started with affiliate marketing, YouTube, SEO and WordPress, building and ranking websites before moving deeper into paid acquisition." },
+      { dates: "2012 → 2017", role: "Freelance Digital Marketer", description: "Started with affiliate marketing, YouTube, SEO and WordPress, building and ranking websites before moving deeper into paid acquisition." },
       { dates: "2017 → Present", role: "Founder / Owner", company: "ROI Media", description: "Independent digital marketing business focused over the years on performance marketing, paid acquisition and digital projects." },
       { dates: "2022 → 2025", role: "Founder / Owner", company: "Adverdose Ltd.", description: "Operated a UK-based performance marketing company, managing paid acquisition across Meta, Google and YouTube at significant scale." },
       { dates: "2024 → 2025", role: "Affiliate Manager", company: "LeadX Pro", description: "Affiliate management, traffic quality, campaign performance and scaling across multiple performance marketing verticals." },
@@ -141,14 +141,14 @@ export const croatianContent: SiteContent = {
   nav: { about: "O meni", work: "Radovi", experience: "Iskustvo", contact: "Kontakt" },
   hero: {
     title: "Digitalni marketing.\nModerni web development.\nAgentic AI.",
-    copy: "14+ godina iskustva u digitalnom marketingu, danas povezano s modernim web developmentom i AI automatizacijom za izradu pametnijih digitalnih proizvoda.",
+    copy: "14+ godina iskustva u digitalnom marketingu, danas povezujem s modernim web developmentom i AI automatizacijom za izradu pametnijih digitalnih proizvoda.",
     cta: "Pogledaj moje radove ↓",
   },
   about: {
     label: "O meni",
     paragraphs: [
       "Posljednjih 14+ godina radio sam u različitim područjima digitalnog marketinga, od SEO-a i izrade web-stranica do plaćenog oglašavanja, performance marketinga, e-trgovine i regrutacije.",
-      "Tijekom godina vodio sam i optimizirao kampanje velikog opsega, radio i na affiliate i na oglašivačkoj strani industrije te se u novije vrijeme posvetio regrutaciji, gdje svoje iskustvo iz industrije koristim za prepoznavanje i procjenu kandidata za tvrtke usmjerene na rezultate.",
+      "Tijekom godina vodio sam i optimizirao kampanje velikog opsega, radio i na affiliate i na advertiser strani industrije te se u novije vrijeme posvetio regrutaciji, gdje svoje iskustvo iz industrije koristim za prepoznavanje i procjenu kandidata za tvrtke usmjerene na performance marketing.",
       "Danas to iskustvo proširujem modernim web developmentom i agentic AI-jem, izrađujući web-stranice, digitalne proizvode i AI automatizacije koje spajaju tehnologiju s marketinškim razumijevanjem onoga što uistinu donosi rezultate.",
     ],
   },
@@ -167,9 +167,9 @@ export const croatianContent: SiteContent = {
     entries: [
       { dates: "2012 → 2017", role: "Freelance stručnjak za digitalni marketing", description: "Počeo sam s affiliate marketingom, YouTubeom, SEO-om i WordPressom, izrađujući i pozicionirajući web-stranice prije dubljeg ulaska u plaćeno oglašavanje." },
       { dates: "2017 → danas", role: "Osnivač / vlasnik", company: "ROI Media", description: "Samostalni rad u digitalnom marketingu, tijekom godina usmjeren na performance marketing, plaćeno oglašavanje i digitalne projekte." },
-      { dates: "2022 → 2025", role: "Osnivač / vlasnik", company: "Adverdose Ltd.", description: "Vodio sam britansku tvrtku za performance marketing te upravljao plaćenim oglašavanjem na Meta, Google i YouTube kanalima velikog opsega." },
+      { dates: "2022 → 2025", role: "Osnivač / vlasnik", company: "Adverdose Ltd.", description: "Vodio sam britansku tvrtku za performance marketing te upravljao plaćenim oglašavanjem na Meta, Google i YouTube kanalima na većoj skali." },
       { dates: "2024 → 2025", role: "Affiliate Manager", company: "LeadX Pro", description: "Upravljanje affiliate partnerima, kvaliteta prometa, izvedba kampanja i skaliranje u više vertikala performance marketinga." },
-      { dates: "2026", role: "Data Analyst, E-commerce", company: "Tailored Canvases", description: "Analiza i optimizacija kampanja pomoću Triple Whalea u Meta oglašavanju velikog opsega." },
+      { dates: "2026", role: "Data Analyst, E-commerce", company: "Tailored Canvases", description: "Analiza i optimizacija Meta kampanja na većoj skali pomoću Triple Whalea." },
       { dates: "2026 → danas", role: "Specijalist za regrutaciju", company: "AffPal", description: "Regrutacija i procjena kandidata za tvrtke usmjerene na rezultate, uz primjenu opsežnog iskustva u affiliate marketingu i širem digitalnom marketingu." },
     ],
   },

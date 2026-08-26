@@ -154,7 +154,7 @@ export const adverdoseCaseStudyContent: Record<Locale, AdverdoseCaseStudyContent
     sections: {
       overview: {
         label: "OVERVIEW",
-        text: "Adverdose was a custom-built marketing website created without a framework or page builder. The project was developed from scratch using semantic HTML, custom CSS and vanilla JavaScript, with the goal of keeping the site lightweight, fast and giving full control over its structure, styling and behaviour.",
+        text: "Adverdose is a custom-built marketing website created without a framework or page builder. The project was developed from scratch using semantic HTML, custom CSS and vanilla JavaScript, with the goal of keeping the site lightweight, fast and giving full control over its structure, styling and behaviour.",
       },
       approach: {
         label: "DESIGN APPROACH",
