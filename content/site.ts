@@ -53,7 +53,7 @@ export const workProjects: WorkProject[] = [
       },
       hr: {
         category: "WEB DEVELOPMENT",
-        description: "Dvojezični osobni portfolio dizajniran i izrađen kao brza i responzivna web stranica, s posebnim naglaskom na tipografiju, pristupačnost, SEO i čisto korisničko iskustvo.",
+        description: "Dvojezični osobni portfolio dizajniran i izrađen kao brza i responzivna web-stranica, s posebnim naglaskom na tipografiju, pristupačnost, SEO i čisto korisničko iskustvo.",
         caseStudy: "Pogledaj case study →",
         visit: "Pogledaj live site ↗",
         code: "Pogledaj kod ↗",
@@ -86,7 +86,7 @@ export const workProjects: WorkProject[] = [
       },
       hr: {
         category: "WEB DEVELOPMENT",
-        description: "Responsive marketinška web-stranica izrađena od nule koristeći HTML, CSS i JavaScript.",
+        description: "Responzivna marketinška web-stranica izrađena od nule koristeći HTML, CSS i JavaScript.",
         caseStudy: "Pogledaj case study →",
         visit: "Pogledaj live site ↗",
         code: "Pogledaj kod ↗",
@@ -101,7 +101,7 @@ export const englishContent: SiteContent = {
   nav: { about: "About", work: "Work", experience: "Experience", contact: "Contact" },
   hero: {
     title: "Digital marketing.\nModern web development.\nAgentic AI.",
-    copy: "14+ years of digital marketing experience, now combined with modern development and AI-powered workflows to build smarter digital products.",
+    copy: "14+ years of digital marketing experience, now combined with modern web development and AI-powered workflows to build smarter digital products.",
     cta: "View my work ↓",
   },
   about: {
@@ -126,8 +126,8 @@ export const englishContent: SiteContent = {
     label: "Experience",
     entries: [
       { dates: "2012 → 2017", role: "Independent Digital Marketer", description: "Started with affiliate marketing, YouTube, SEO and WordPress, building and ranking websites before moving deeper into paid acquisition." },
-      { dates: "2017 → Present", role: "Founder/Owner", company: "ROI Media", description: "Independent digital marketing business focused over the years on performance marketing, paid acquisition and digital projects." },
-      { dates: "2022 → 2025", role: "Founder/Owner", company: "Adverdose Ltd.", description: "Operated a UK-based performance marketing company, managing paid acquisition across Meta, Google and YouTube at significant scale." },
+      { dates: "2017 → Present", role: "Founder / Owner", company: "ROI Media", description: "Independent digital marketing business focused over the years on performance marketing, paid acquisition and digital projects." },
+      { dates: "2022 → 2025", role: "Founder / Owner", company: "Adverdose Ltd.", description: "Operated a UK-based performance marketing company, managing paid acquisition across Meta, Google and YouTube at significant scale." },
       { dates: "2024 → 2025", role: "Affiliate Manager", company: "LeadX Pro", description: "Affiliate management, traffic quality, campaign performance and scaling across multiple performance marketing verticals." },
       { dates: "2026", role: "Data Analyst, E-commerce", company: "Tailored Canvases", description: "Campaign analysis and optimization using Triple Whale across large-scale Meta advertising operations." },
       { dates: "2026 → Present", role: "Recruitment Specialist", company: "AffPal", description: "Recruitment and evaluation of talent for performance-driven companies, leveraging extensive affiliate and digital marketing industry experience." },
@@ -142,7 +142,7 @@ export const croatianContent: SiteContent = {
   hero: {
     title: "Digitalni marketing.\nModerni web development.\nAgentic AI.",
     copy: "14+ godina iskustva u digitalnom marketingu, danas povezano s modernim web developmentom i AI automatizacijom za izradu pametnijih digitalnih proizvoda.",
-    cta: "Pogledajte moje radove ↓",
+    cta: "Pogledaj moje radove ↓",
   },
   about: {
     label: "O meni",
@@ -159,13 +159,13 @@ export const croatianContent: SiteContent = {
       { title: "DIGITALNI MARKETING", items: ["SEO", "Meta Ads", "Google Ads", "YouTube Ads", "Performance marketing", "E-trgovina", "Analitika"] },
       { title: "WEB DEVELOPMENT", items: ["HTML", "CSS", "JavaScript", "Responsive web development", "WordPress", "Web performanse", "Git/GitHub"] },
       { title: "AI & AGENTIC WORKFLOWS", items: ["Razvoj uz pomoć AI-ja", "AI agenti", "Agentic workflows", "Automatizacija", "Research workflows", "Data workflows"] },
-      { title: "REGRUTACIJA I TALENTI", items: ["Pronalaženje kandidata", "Selekcija i procjena kandidata", "Regrutacija specifična za industriju", "Povezivanje kandidata i tvrtki", "Upravljanje kandidatima"] },
+      { title: "REGRUTACIJA I TALENTI", items: ["Pronalaženje kandidata", "Selekcija i procjena kandidata", "Regrutacija za specifične industrije", "Povezivanje kandidata i tvrtki", "Upravljanje kandidatima"] },
     ],
   },
   experience: {
     label: "Iskustvo",
     entries: [
-      { dates: "2012 → 2017", role: "Samostalni stručnjak za digitalni marketing", description: "Počeo sam s affiliate marketingom, YouTubeom, SEO-om i WordPressom, izrađujući i pozicionirajući web-stranice prije dubljeg ulaska u plaćeno oglašavanje." },
+      { dates: "2012 → 2017", role: "Freelance stručnjak za digitalni marketing", description: "Počeo sam s affiliate marketingom, YouTubeom, SEO-om i WordPressom, izrađujući i pozicionirajući web-stranice prije dubljeg ulaska u plaćeno oglašavanje." },
       { dates: "2017 → danas", role: "Osnivač / vlasnik", company: "ROI Media", description: "Samostalni rad u digitalnom marketingu, tijekom godina usmjeren na performance marketing, plaćeno oglašavanje i digitalne projekte." },
       { dates: "2022 → 2025", role: "Osnivač / vlasnik", company: "Adverdose Ltd.", description: "Vodio sam britansku tvrtku za performance marketing te upravljao plaćenim oglašavanjem na Meta, Google i YouTube kanalima velikog opsega." },
       { dates: "2024 → 2025", role: "Affiliate Manager", company: "LeadX Pro", description: "Upravljanje affiliate partnerima, kvaliteta prometa, izvedba kampanja i skaliranje u više vertikala performance marketinga." },

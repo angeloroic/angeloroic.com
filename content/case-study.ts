@@ -50,8 +50,8 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
       },
       localization: {
         label: "LOCALIZATION & SEO",
-        text: "The portfolio is available in English and Croatian, with each version designed to be useful to people and understandable to search engines.",
-        points: ["English and Croatian routes at / and /hr", "Localized titles, descriptions and Open Graph metadata", "Correct document language, canonical URLs and hreflang alternates"],
+        text: "The portfolio is available in English and Croatian, with localized content and technical SEO tailored to both versions.",
+        points: ["English and Croatian routes at / and /hr", "Localized titles, descriptions and Open Graph metadata", "Correct document language, canonical URLs and hreflang annotations"],
       },
       agentic: {
         label: "AGENTIC DEVELOPMENT",
@@ -95,7 +95,7 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
       },
       responsive: {
         label: "RESPONZIVNI DIZAJN",
-        text: "Sučelje je dorađeno i testirano na mobilnim uređajima, tabletima, laptopima i desktop ekranima. Svaki zadržava isti vizualni jezik, uz prirodnu prilagodbu sadržaja, navigacije i slika dostupnom prostoru.",
+        text: "Sučelje je dorađeno i testirano na mobilnim uređajima, tabletima, laptopima i desktop ekranima. Svaki prikaz zadržava isti vizualni jezik, uz prirodnu prilagodbu sadržaja, navigacije i slika dostupnom prostoru.",
         desktop: "DESKTOP",
         mobile: "MOBILNI",
         desktopAlt: "Desktop snimka zaslona portfolija",
@@ -103,7 +103,7 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
       },
       localization: {
         label: "LOKALIZACIJA I SEO",
-        text: "Portfolio je dostupan na engleskom i hrvatskom jeziku, tako da je koristan ljudima i razumljiv tražilicama.",
+        text: "Portfolio je dostupan na engleskom i hrvatskom jeziku, uz lokaliziran sadržaj i tehnički SEO prilagođen objema verzijama.",
         points: ["Engleska i hrvatska verzija na / i /hr", "Lokalizirani naslovi, opisi i Open Graph metapodaci", "Ispravan jezik dokumenta, canonical URL-ovi i hreflang oznake"],
       },
       agentic: {
@@ -186,7 +186,7 @@ export const adverdoseCaseStudyContent: Record<Locale, AdverdoseCaseStudyContent
     hero: {
       label: "WEB DEVELOPMENT",
       title: "Adverdose",
-      intro: "Responsive marketinška web-stranica izrađena od nule koristeći HTML, CSS i JavaScript.",
+      intro: "Responzivna marketinška web-stranica izrađena od nule koristeći HTML, CSS i JavaScript.",
       visit: "Pogledaj live site ↗",
       code: "Pogledaj kod ↗",
     },
