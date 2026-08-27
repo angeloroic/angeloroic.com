@@ -159,7 +159,7 @@ a:focus-visible, summary:focus-visible {
   .mobile-menu[open] summary span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
   .mobile-menu[open] summary span:nth-child(2) { opacity: 0; }
   .mobile-menu[open] summary span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
-  .mobile-menu-panel { position: absolute; top: calc(100% + 13px); right: 0; display: grid; width: min(286px, calc(100vw - 2 * var(--page-gutter))); padding: .88rem 1.21rem; border: 1px solid var(--border); background: var(--surface); box-shadow: 0 14px 35px rgb(0 0 0 / .22); }
+  .mobile-menu-panel { position: absolute; top: calc(100% + 13px); right: 0; display: grid; width: min(274px, calc(100vw - 2 * var(--page-gutter))); padding: .88rem 1.21rem; border: 1px solid var(--border); background: var(--surface); box-shadow: 0 14px 35px rgb(0 0 0 / .22); }
   .mobile-menu-panel a { min-height: 48px; display: flex; align-items: center; font-family: var(--font-ibm-plex-mono), monospace; color: var(--muted); font-size: .871rem; letter-spacing: .06em; }
   .mobile-menu-panel a:hover { color: var(--teal); }
   .hero { min-height: 0; display: block; padding: clamp(3.75rem, 8vw, 4.5rem) var(--page-gutter) var(--section-space); }
