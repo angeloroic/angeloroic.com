@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 
 const manrope = localFont({
   src: "./fonts/manrope-latin.woff2",
@@ -21,7 +22,10 @@ const ibmPlexMono = localFont({
 export function SiteRootLayout({ children, lang }: { children: ReactNode; lang: "en" | "hr" }) {
   return (
     <html lang={lang} className={`${manrope.variable} ${ibmPlexMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
