@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FooterCopyright } from "@/components/footer-copyright";
+import { SiteStructuredData } from "@/components/site-structured-data";
 import { workProjects, type Locale, type SiteContent } from "@/content/site";
 
 const contacts = {
@@ -24,6 +25,7 @@ export function PortfolioPage({
 
   return (
     <div lang={locale}>
+      <SiteStructuredData />
       <header className="site-header">
         <nav className="shell nav" aria-label="Main navigation">
           <Link className="wordmark" href={languagePaths[locale]}>ANGELO ROIC</Link>
