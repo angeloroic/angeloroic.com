@@ -100,29 +100,37 @@ export function PortfolioPage({
               <div className="work-list">
                 {completedProjects.map((project, index) => {
                   const projectContent = project.localized[locale];
+                  const caseStudyUrl = project.caseStudyUrls?.[locale];
                   const previousCategory = index > 0 ? completedProjects[index - 1].category : undefined;
+                  const preview = project.previewAvailable ? (
+                    <Image
+                      src={project.previewImage}
+                      alt={projectContent.previewAlt}
+                      fill
+                      sizes="(min-width: 1200px) 72vw, (min-width: 640px) 86vw, 100vw"
+                    />
+                  ) : (
+                    <span className="visual-placeholder" role="img" aria-label={projectContent.previewAlt}>{projectContent.previewPlaceholder}</span>
+                  );
 
                   return (
                     <article className="work-item" key={project.slug}>
                       {project.category !== previousCategory && <p className="work-category">{projectContent.category}</p>}
                       <div className="work-index">{project.index}</div>
-                      <h3>{project.title}</h3>
+                      <h3>
+                        {caseStudyUrl ? <Link className="work-card-link" href={caseStudyUrl}>{project.title}</Link> : project.title}
+                      </h3>
                       <p className="work-meta">{project.technologies.join(" · ")}</p>
-                      <div className="work-preview">
-                        {project.previewAvailable ? (
-                          <Image
-                            src={project.previewImage}
-                            alt={projectContent.previewAlt}
-                            fill
-                            sizes="(min-width: 1200px) 72vw, (min-width: 640px) 86vw, 100vw"
-                          />
-                        ) : (
-                          <span className="visual-placeholder" role="img" aria-label={projectContent.previewAlt}>{projectContent.previewPlaceholder}</span>
-                        )}
-                      </div>
+                      {caseStudyUrl ? (
+                        <Link className="work-preview" href={caseStudyUrl} aria-label={`${project.title}: ${projectContent.caseStudy}`}>
+                          {preview}
+                        </Link>
+                      ) : (
+                        <div className="work-preview">{preview}</div>
+                      )}
                       <p className="work-description">{projectContent.description}</p>
                       <div className="work-ctas">
-                        {project.caseStudyUrls && <Link className="work-cta" href={project.caseStudyUrls[locale]}>{projectContent.caseStudy}</Link>}
+                        {caseStudyUrl && <Link className="work-cta" href={caseStudyUrl}>{projectContent.caseStudy}</Link>}
                         {project.websiteUrl && <a className="work-cta" href={project.websiteUrl} target="_blank" rel="noopener noreferrer">{projectContent.visit}</a>}
                         {project.codeUrl && <a className="work-cta" href={project.codeUrl} target="_blank" rel="noopener noreferrer">{projectContent.code}</a>}
                       </div>
