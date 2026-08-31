@@ -103,6 +103,7 @@ a:focus-visible, summary:focus-visible {
 .case-screen { position: relative; overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--surface); }
 .case-screen-desktop { aspect-ratio: 1265 / 712; }
 .case-screen-mobile { aspect-ratio: 390 / 844; }
+.case-screen-roi-mobile { aspect-ratio: 375 / 720; }
 .case-flow { display: flex; flex-wrap: wrap; gap: .8rem 0; margin: 2.7rem 0 0; padding: 0; list-style: none; color: var(--foreground); font-family: var(--font-ibm-plex-mono), monospace; font-size: .75rem; line-height: 1.55; }
 .case-flow li { display: inline-flex; align-items: center; }
 .case-flow li:not(:last-child)::after { content: "→"; margin: 0 .8rem; color: var(--purple-heading); }

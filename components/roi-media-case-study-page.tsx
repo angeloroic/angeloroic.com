@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import roiMediaMobile from "@/public/roi-media-mobile.png";
 import { roiMediaCaseStudyContent } from "@/content/roi-media-case-study";
 import type { Locale } from "@/content/site";
 
@@ -90,8 +91,8 @@ export function RoiMediaCaseStudyPage({ locale }: { locale: Locale }) {
                 </figure>
                 <figure>
                   <figcaption>{content.sections.responsive.mobile}</figcaption>
-                  <div className="case-screen case-screen-mobile">
-                    <Image src="/roi-media-mobile.png" alt={content.sections.responsive.mobileAlt} fill sizes="(min-width: 1200px) 15vw, (min-width: 640px) 24vw, 58vw" />
+                  <div className="case-screen case-screen-mobile case-screen-roi-mobile">
+                    <Image src={roiMediaMobile} alt={content.sections.responsive.mobileAlt} fill sizes="(min-width: 1200px) 15vw, (min-width: 640px) 24vw, 58vw" />
                   </div>
                 </figure>
               </div>

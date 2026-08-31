@@ -91,7 +91,7 @@ export const roiMediaCaseStudyContent: Record<Locale, RoiMediaCaseStudyContent> 
       label: "WEB DEVELOPMENT · 2026",
       title: "ROI Media",
       intro: "Web stranica digitalnog studija s Hvara, razvijena od strategije i sadržaja do dizajna, razvoja i produkcije.",
-      visit: "View live site ↗",
+      visit: "Pogledaj live site ↗",
     },
     facts: [
       { label: "Uloga", values: ["Strategija", "Dizajn", "Sadržaj", "Razvoj", "SEO", "Produkcija"] },
@@ -125,7 +125,7 @@ export const roiMediaCaseStudyContent: Record<Locale, RoiMediaCaseStudyContent> 
       responsive: {
         label: "Responsive",
         desktop: "Desktop",
-        mobile: "Mobile",
+        mobile: "Mobilni",
         desktopAlt: "Desktop screenshot ROI Media stranice",
         mobileAlt: "Mobile screenshot ROI Media stranice",
       },
@@ -149,7 +149,7 @@ export const roiMediaCaseStudyContent: Record<Locale, RoiMediaCaseStudyContent> 
         paragraphs: [
           "ROI Media sada ima brzu, responzivnu i dvojezičnu web stranicu koja povezuje pozicioniranje, dizajn, SEO, lead generation i produkcijsku infrastrukturu u jednu cjelinu.",
         ],
-        visit: "View live site ↗",
+        visit: "Pogledaj live site ↗",
         back: "Natrag na projekte ↑",
       },
     },
