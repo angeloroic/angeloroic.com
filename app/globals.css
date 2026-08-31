@@ -76,6 +76,7 @@ a:focus-visible, summary:focus-visible {
 .case-hero { padding-top: clamp(5rem, 6vw, 5.5rem); padding-bottom: clamp(3.5rem, 5vw, 4.5rem); }
 .case-kicker, .case-facts dt, .case-screenshots figcaption { margin: 0; color: var(--purple-heading); font-family: var(--font-ibm-plex-mono), monospace; font-size: .72rem; font-weight: 600; letter-spacing: .1em; }
 .case-hero h1 { max-width: 900px; margin: 1.1rem 0 1.6rem; font-size: clamp(1.8225rem, 3.645vw, 3.7665rem); line-height: .94; letter-spacing: -.07em; }
+.case-hero .case-title-proper { letter-spacing: -.045em; }
 .case-intro { max-width: 680px; margin: 0; color: var(--muted); font-size: clamp(1.08rem, 1.5vw, 1.28rem); line-height: 1.65; }
 .case-hero-links { display: flex; flex-wrap: wrap; gap: 1.5rem 2.25rem; margin-top: 1.9rem; }
 .case-hero-link { margin-top: 0; }
@@ -85,6 +86,9 @@ a:focus-visible, summary:focus-visible {
 .case-body { max-width: 860px; }
 .case-body > p { max-width: 720px; margin: 0; color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
 .case-body > .case-lead { color: var(--foreground); font-size: clamp(1.22rem, 1.7vw, 1.55rem); line-height: 1.55; letter-spacing: -.02em; }
+.case-copy { display: grid; gap: 1.15rem; max-width: 720px; }
+.case-copy p { margin: 0; color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
+.case-copy .case-lead { color: var(--foreground); font-size: clamp(1.22rem, 1.7vw, 1.55rem); line-height: 1.55; letter-spacing: -.02em; }
 .case-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin: 3rem 0 0; border-top: 1px solid var(--border); }
 .case-facts > div { padding: 1.2rem 1.4rem 1.2rem 0; border-bottom: 1px solid var(--border); }
 .case-facts > div + div { padding-left: 1.4rem; border-left: 1px solid var(--border); }
@@ -184,6 +188,8 @@ a:focus-visible, summary:focus-visible {
   .case-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .case-body > p { font-size: 1rem; }
   .case-body > .case-lead { font-size: 1.18rem; }
+  .case-copy p { font-size: 1rem; }
+  .case-copy .case-lead { font-size: 1.18rem; }
   .case-facts, .case-points, .case-validation { grid-template-columns: 1fr; margin-top: 2rem; }
   .case-facts > div, .case-facts > div + div { padding: 1rem 0; border-left: 0; }
   .case-points li, .case-points li:nth-child(even), .case-validation li, .case-validation li:nth-child(even) { padding: .9rem 0; border-left: 0; }

@@ -13,6 +13,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { en: `${siteUrl}/`, hr: `${siteUrl}/hr` } },
     },
     {
+      url: `${siteUrl}/work/roi-media`,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/work/roi-media`,
+          hr: `${siteUrl}/hr/work/roi-media`,
+        },
+      },
+    },
+    {
+      url: `${siteUrl}/hr/work/roi-media`,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/work/roi-media`,
+          hr: `${siteUrl}/hr/work/roi-media`,
+        },
+      },
+    },
+    {
       url: `${siteUrl}/work/personal-portfolio`,
       alternates: {
         languages: {

@@ -23,16 +23,46 @@ export type WorkProject = {
   caseStudyUrls?: Record<Locale, string>;
   websiteUrl?: string;
   codeUrl?: string;
-  localized: Record<Locale, { category: string; description: string; caseStudy: string; visit: string; code: string; previewAlt: string; previewPlaceholder: string }>;
+  localized: Record<Locale, { category: string; description: string; caseStudy: string; visit: string; code?: string; previewAlt: string; previewPlaceholder: string }>;
 };
 
 // Adding a completed project here automatically exposes the Work section and
 // navigation link. Empty categories are not rendered.
 export const workProjects: WorkProject[] = [
   {
-    slug: "angelo-roic-portfolio",
+    slug: "roi-media",
     completed: true,
     index: "01",
+    category: "digital-studio",
+    title: "ROI Media",
+    technologies: ["Next.js", "TypeScript", "Cloudflare", "SEO", "Agentic Development"],
+    previewImage: "/roi-media-desktop.png",
+    previewAvailable: true,
+    caseStudyUrls: { en: "/work/roi-media", hr: "/hr/work/roi-media" },
+    websiteUrl: "https://roimedia.hr",
+    localized: {
+      en: {
+        category: "WEB DEVELOPMENT",
+        description: "A bilingual website for a Hvar-based digital studio, developed from strategy and content through design, development, SEO and production.",
+        caseStudy: "View case study →",
+        visit: "View live site ↗",
+        previewAlt: "Desktop screenshot of the ROI Media digital studio website",
+        previewPlaceholder: "Screenshot to be added",
+      },
+      hr: {
+        category: "WEB DEVELOPMENT",
+        description: "Dvojezična web stranica digitalnog studija s Hvara, razvijena od strategije i sadržaja do dizajna, razvoja, SEO-a i produkcije.",
+        caseStudy: "Pogledaj case study →",
+        visit: "Pogledaj live site ↗",
+        previewAlt: "Desktop snimka web stranice digitalnog studija ROI Media",
+        previewPlaceholder: "Snimka zaslona će biti dodana",
+      },
+    },
+  },
+  {
+    slug: "angelo-roic-portfolio",
+    completed: true,
+    index: "02",
     category: "web-development",
     title: "PERSONAL PORTFOLIO",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Agentic Development"],
@@ -65,7 +95,7 @@ export const workProjects: WorkProject[] = [
   {
     slug: "adverdose",
     completed: true,
-    index: "02",
+    index: "03",
     category: "web-development",
     title: "Adverdose",
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "Git", "GitHub Pages"],
@@ -138,7 +168,7 @@ export const englishContent: SiteContent = {
 };
 
 export const croatianContent: SiteContent = {
-  nav: { about: "O meni", work: "Radovi", experience: "Iskustvo", contact: "Kontakt" },
+  nav: { about: "O meni", work: "Projekti", experience: "Iskustvo", contact: "Kontakt" },
   hero: {
     title: "Digitalni marketing.\nModerni web development.\nAgentic AI.",
     copy: "14+ godina iskustva u digitalnom marketingu, danas povezujem s modernim web developmentom i AI automatizacijom za izradu pametnijih digitalnih proizvoda.",
