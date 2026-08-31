@@ -98,10 +98,9 @@ export function PortfolioPage({
             <div className="shell section-grid">
               <h2 className="section-title" id="work-heading">{content.work.label}</h2>
               <div className="work-list">
-                {completedProjects.map((project, index) => {
+                {completedProjects.map((project) => {
                   const projectContent = project.localized[locale];
                   const caseStudyUrl = project.caseStudyUrls?.[locale];
-                  const previousCategory = index > 0 ? completedProjects[index - 1].category : undefined;
                   const preview = project.previewAvailable ? (
                     <Image
                       src={project.previewImage}
@@ -115,7 +114,7 @@ export function PortfolioPage({
 
                   return (
                     <article className="work-item" key={project.slug}>
-                      {project.category !== previousCategory && <p className="work-category">{projectContent.category}</p>}
+                      <p className="work-category">{projectContent.category}</p>
                       <div className="work-index">{project.index}</div>
                       <h3>
                         {caseStudyUrl ? <Link className="work-card-link" href={caseStudyUrl}>{project.title}</Link> : project.title}

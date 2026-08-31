@@ -16,7 +16,7 @@ export type CaseStudyContent = {
 
 export const caseStudyContent: Record<Locale, CaseStudyContent> = {
   en: {
-    navigation: { work: "Work", language: "Language" },
+    navigation: { work: "Projects", language: "Language" },
     hero: {
       label: "WEB DEVELOPMENT · 2026",
       title: "PERSONAL PORTFOLIO",
@@ -64,7 +64,7 @@ export const caseStudyContent: Record<Locale, CaseStudyContent> = {
         text: "A fast, responsive, bilingual portfolio that provides a clear foundation for future projects and case studies.",
         visit: "View live site ↗",
         code: "View code ↗",
-        back: "Back to Work ↑",
+        back: "Back to Projects ↑",
       },
     },
   },
@@ -138,7 +138,7 @@ type AdverdoseCaseStudyContent = {
 
 export const adverdoseCaseStudyContent: Record<Locale, AdverdoseCaseStudyContent> = {
   en: {
-    navigation: { work: "Work", language: "Language" },
+    navigation: { work: "Projects", language: "Language" },
     hero: {
       label: "WEB DEVELOPMENT",
       title: "Adverdose",
@@ -177,7 +177,7 @@ export const adverdoseCaseStudyContent: Record<Locale, AdverdoseCaseStudyContent
         text: "The final result is a lightweight, fully responsive static website that works across desktop, tablet and mobile without relying on frameworks or visual site builders.",
         visit: "View live site ↗",
         code: "View code ↗",
-        back: "Back to Work ↑",
+        back: "Back to Projects ↑",
       },
     },
   },

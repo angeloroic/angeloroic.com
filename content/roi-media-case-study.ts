@@ -17,7 +17,7 @@ type RoiMediaCaseStudyContent = {
 
 export const roiMediaCaseStudyContent: Record<Locale, RoiMediaCaseStudyContent> = {
   en: {
-    navigation: { work: "Work", language: "Language" },
+    navigation: { work: "Projects", language: "Language" },
     hero: {
       label: "WEB DEVELOPMENT · 2026",
       title: "ROI Media",
@@ -81,7 +81,7 @@ export const roiMediaCaseStudyContent: Record<Locale, RoiMediaCaseStudyContent> 
           "ROI Media now has a fast, responsive and bilingual website that brings positioning, design, SEO, lead generation and production infrastructure into one cohesive system.",
         ],
         visit: "View live site ↗",
-        back: "Back to Work ↑",
+        back: "Back to Projects ↑",
       },
     },
   },

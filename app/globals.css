@@ -59,7 +59,7 @@ a:focus-visible, summary:focus-visible {
 .work-list { border-top: 1px solid var(--border); }
 .work-item { padding: 2.3rem 0 2.6rem; border-bottom: 1px solid var(--border); }
 .work-category { margin: 0 0 2rem; color: var(--purple-heading); font-family: var(--font-ibm-plex-mono), monospace; font-size: .72rem; font-weight: 600; letter-spacing: .1em; }
-.work-index { color: var(--teal); font-family: var(--font-ibm-plex-mono), monospace; font-size: .72rem; letter-spacing: .1em; }
+.work-index { color: var(--teal); font-family: var(--font-ibm-plex-mono), monospace; font-size: .86rem; letter-spacing: .1em; }
 .work-item h3 { max-width: 820px; margin: .85rem 0 1rem; font-size: clamp(1.458rem, 2.43vw, 2.43rem); line-height: 1.02; letter-spacing: -.055em; }
 .work-meta { margin: 0; color: var(--muted); font-family: var(--font-ibm-plex-mono), monospace; font-size: .72rem; line-height: 1.6; letter-spacing: .02em; }
 .work-preview { position: relative; display: block; width: 85%; aspect-ratio: 1265 / 712; margin: 2.2rem 0; overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--surface); }

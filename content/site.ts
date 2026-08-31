@@ -128,11 +128,11 @@ export const workProjects: WorkProject[] = [
 ];
 
 export const englishContent: SiteContent = {
-  nav: { about: "About", work: "Work", experience: "Experience", contact: "Contact" },
+  nav: { about: "About", work: "Projects", experience: "Experience", contact: "Contact" },
   hero: {
     title: "Digital marketing.\nModern web development.\nAgentic AI.",
     copy: "14+ years of digital marketing experience, now combined with modern web development and AI-powered workflows to build smarter digital products.",
-    cta: "View my work ↓",
+    cta: "View my projects ↓",
   },
   about: {
     label: "About",
@@ -142,7 +142,7 @@ export const englishContent: SiteContent = {
       "Today, I’m also expanding that experience into modern web development and agentic AI, building websites, digital products and AI-powered workflows that combine technology with a marketer’s understanding of what actually drives results.",
     ],
   },
-  work: { label: "Work" },
+  work: { label: "Projects" },
   services: {
     label: "What I Do",
     areas: [
