@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 
 const manrope = localFont({
@@ -25,6 +26,7 @@ export function SiteRootLayout({ children, lang }: { children: ReactNode; lang: 
       <body>
         {children}
         <Analytics />
+        <GoogleAnalytics gaId="G-0F0EWTE9QM" />
       </body>
     </html>
   );
