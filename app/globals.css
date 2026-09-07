@@ -206,6 +206,10 @@ a:focus-visible, summary:focus-visible {
   .footer { flex-direction: column; }
 }
 
+@media (max-width: 359px) {
+  .case-work-link { display: none; }
+}
+
 /* Tablet: content-led hero and adaptable About layout. */
 @media (min-width: 640px) and (max-width: 1199px) {
   :root { --page-gutter: clamp(2rem, 5vw, 4.5rem); --section-space: 4.5rem; }
