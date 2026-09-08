@@ -31,6 +31,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: `${siteUrl}/work/opg-makjanic`,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/work/opg-makjanic`,
+          hr: `${siteUrl}/hr/work/opg-makjanic`,
+        },
+      },
+    },
+    {
+      url: `${siteUrl}/hr/work/opg-makjanic`,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/work/opg-makjanic`,
+          hr: `${siteUrl}/hr/work/opg-makjanic`,
+        },
+      },
+    },
+    {
       url: `${siteUrl}/work/personal-portfolio`,
       alternates: {
         languages: {

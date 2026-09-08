@@ -19,6 +19,7 @@ export type WorkProject = {
   title: string;
   technologies: string[];
   previewImage: string;
+  previewAspectRatio?: string;
   previewAvailable: boolean;
   caseStudyUrls?: Record<Locale, string>;
   websiteUrl?: string;
@@ -60,9 +61,40 @@ export const workProjects: WorkProject[] = [
     },
   },
   {
-    slug: "angelo-roic-portfolio",
+    slug: "opg-makjanic",
     completed: true,
     index: "02",
+    category: "web-development",
+    title: "OPG Makjanić",
+    technologies: ["Next.js", "TypeScript", "Cloudflare", "D1", "Resend", "Turnstile"],
+    previewImage: "/opg-after-desktop-hero.webp",
+    previewAspectRatio: "1440 / 662",
+    previewAvailable: true,
+    caseStudyUrls: { en: "/work/opg-makjanic", hr: "/hr/work/opg-makjanic" },
+    websiteUrl: "https://opgmakjanic.com",
+    localized: {
+      en: {
+        category: "WEB DEVELOPMENT",
+        description: "A complete rebuild of a local agricultural business website, combining an authentic Hvar identity with modern UX, responsive development, local SEO and production-ready lead infrastructure.",
+        caseStudy: "View case study →",
+        visit: "View live site ↗",
+        previewAlt: "Desktop screenshot of the rebuilt OPG Makjanić website",
+        previewPlaceholder: "Screenshot to be added",
+      },
+      hr: {
+        category: "WEB DEVELOPMENT",
+        description: "Kompletan rebuild web-stranice lokalnog poljoprivrednog gospodarstva, koji spaja autentičan hvarski identitet s modernim UX-om, responsive developmentom, lokalnim SEO-om i production-ready infrastrukturom za upite.",
+        caseStudy: "Pogledaj case study →",
+        visit: "Pogledaj live site ↗",
+        previewAlt: "Desktop snimka obnovljene web-stranice OPG Makjanić",
+        previewPlaceholder: "Snimka zaslona će biti dodana",
+      },
+    },
+  },
+  {
+    slug: "angelo-roic-portfolio",
+    completed: true,
+    index: "03",
     category: "web-development",
     title: "PERSONAL PORTFOLIO",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Agentic Development"],
@@ -95,7 +127,7 @@ export const workProjects: WorkProject[] = [
   {
     slug: "adverdose",
     completed: true,
-    index: "03",
+    index: "04",
     category: "web-development",
     title: "Adverdose",
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "Git", "GitHub Pages"],

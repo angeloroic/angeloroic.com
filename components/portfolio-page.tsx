@@ -101,6 +101,7 @@ export function PortfolioPage({
                 {completedProjects.map((project) => {
                   const projectContent = project.localized[locale];
                   const caseStudyUrl = project.caseStudyUrls?.[locale];
+                  const previewStyle = project.previewAspectRatio ? { aspectRatio: project.previewAspectRatio } : undefined;
                   const preview = project.previewAvailable ? (
                     <Image
                       src={project.previewImage}
@@ -121,11 +122,11 @@ export function PortfolioPage({
                       </h3>
                       <p className="work-meta">{project.technologies.join(" · ")}</p>
                       {caseStudyUrl ? (
-                        <Link className="work-preview" href={caseStudyUrl} aria-label={`${project.title}: ${projectContent.caseStudy}`}>
+                        <Link className="work-preview" href={caseStudyUrl} aria-label={`${project.title}: ${projectContent.caseStudy}`} style={previewStyle}>
                           {preview}
                         </Link>
                       ) : (
-                        <div className="work-preview">{preview}</div>
+                        <div className="work-preview" style={previewStyle}>{preview}</div>
                       )}
                       <p className="work-description">{projectContent.description}</p>
                       <div className="work-ctas">

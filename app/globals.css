@@ -74,7 +74,7 @@ a:focus-visible, summary:focus-visible {
 .case-work-link { min-height: 44px; display: inline-flex; align-items: center; color: var(--muted); font-family: var(--font-ibm-plex-mono), monospace; font-size: .825rem; letter-spacing: .04em; transition: color .2s ease; }
 .case-work-link:hover { color: var(--teal); }
 .case-hero { padding-top: clamp(5rem, 6vw, 5.5rem); padding-bottom: clamp(3.5rem, 5vw, 4.5rem); }
-.case-kicker, .case-facts dt, .case-screenshots figcaption { margin: 0; color: var(--purple-heading); font-family: var(--font-ibm-plex-mono), monospace; font-size: .72rem; font-weight: 600; letter-spacing: .1em; }
+.case-kicker, .case-facts dt, .case-screenshots figcaption, .case-comparison figcaption { margin: 0; color: var(--purple-heading); font-family: var(--font-ibm-plex-mono), monospace; font-size: .72rem; font-weight: 600; letter-spacing: .1em; }
 .case-hero h1 { max-width: 900px; margin: 1.1rem 0 1.6rem; font-size: clamp(1.8225rem, 3.645vw, 3.7665rem); line-height: .94; letter-spacing: -.07em; }
 .case-hero .case-title-proper { letter-spacing: -.045em; }
 .case-intro { max-width: 680px; margin: 0; color: var(--muted); font-size: clamp(1.08rem, 1.5vw, 1.28rem); line-height: 1.65; }
@@ -104,6 +104,11 @@ a:focus-visible, summary:focus-visible {
 .case-screen-desktop { aspect-ratio: 1265 / 712; }
 .case-screen-mobile { aspect-ratio: 390 / 844; }
 .case-screen-roi-mobile { aspect-ratio: 375 / 720; }
+.case-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.25rem, 2vw, 1.75rem); margin-top: 2.6rem; }
+.case-comparison-featured { margin-top: 3rem; }
+.case-comparison figure { min-width: 0; margin: 0; }
+.case-comparison figcaption { margin-bottom: .9rem; color: var(--teal); }
+.case-comparison-image { display: block; width: 100%; height: auto; }
 .case-flow { display: flex; flex-wrap: wrap; gap: .8rem 0; margin: 2.7rem 0 0; padding: 0; list-style: none; color: var(--foreground); font-family: var(--font-ibm-plex-mono), monospace; font-size: .75rem; line-height: 1.55; }
 .case-flow li { display: inline-flex; align-items: center; }
 .case-flow li:not(:last-child)::after { content: "→"; margin: 0 .8rem; color: var(--purple-heading); }
@@ -196,6 +201,8 @@ a:focus-visible, summary:focus-visible {
   .case-points li, .case-points li:nth-child(even), .case-validation li, .case-validation li:nth-child(even) { padding: .9rem 0; border-left: 0; }
   .case-screenshots { grid-template-columns: 1fr; gap: 2rem; margin-top: 2.1rem; }
   .case-screen-mobile { width: min(58vw, 220px); }
+  .case-comparison { grid-template-columns: 1fr; gap: 2rem; margin-top: 2.1rem; }
+  .case-comparison-featured { margin-top: 2.25rem; }
   .case-flow { display: grid; gap: .7rem; }
   .case-flow li:not(:last-child)::after { content: none; }
   .case-flow li::before { content: "→"; margin-right: .65rem; color: var(--purple-heading); }
