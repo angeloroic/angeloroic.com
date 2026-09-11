@@ -154,6 +154,7 @@ a:focus-visible, summary:focus-visible {
 @media (max-width: 639px) {
   :root { --page-gutter: clamp(1.25rem, 5vw, 1.5rem); --section-space: 3.25rem; }
   .nav { height: 70px; }
+  .site-header.is-scrolled .nav { height: 54px; }
   .wordmark { display: inline-flex; min-height: 48px; align-items: center; flex: 0 0 auto; white-space: nowrap; font-size: 1rem; }
   .nav-side { gap: .55rem; }
   .case-nav .wordmark { font-size: 1rem; }
