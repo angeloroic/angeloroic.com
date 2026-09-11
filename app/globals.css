@@ -31,7 +31,9 @@ a:focus-visible, summary:focus-visible {
 .shell { max-width: 1440px; margin: 0 auto; padding: 0 var(--page-gutter); }
 .eyebrow { font-family: var(--font-ibm-plex-mono), monospace; }
 .eyebrow { color: var(--teal); font-size: .69rem; letter-spacing: .13em; text-transform: uppercase; }
-.site-header { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--background) 92%, transparent); backdrop-filter: blur(14px); }
+.site-header-shell { height: 82px; }
+.site-header { position: relative; z-index: 10; background: color-mix(in srgb, var(--background) 92%, transparent); backdrop-filter: blur(14px); }
+.site-header.is-scrolled { position: fixed; top: 0; left: 0; right: 0; }
 .nav { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
 .site-header.is-scrolled .nav { height: 58px; }
 .wordmark { font-size: 1.5rem; font-weight: 700; letter-spacing: .12em; transition: color .2s ease; }
@@ -153,6 +155,7 @@ a:focus-visible, summary:focus-visible {
 /* Mobile: compact, single-column layout with one shared gutter. */
 @media (max-width: 639px) {
   :root { --page-gutter: clamp(1.25rem, 5vw, 1.5rem); --section-space: 3.25rem; }
+  .site-header-shell { height: 70px; }
   .nav { height: 70px; }
   .site-header.is-scrolled .nav { height: 54px; }
   .wordmark { display: inline-flex; min-height: 48px; align-items: center; flex: 0 0 auto; white-space: nowrap; font-size: 1rem; }

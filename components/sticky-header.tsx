@@ -40,5 +40,9 @@ export function StickyHeader({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  return <header className={`site-header${isScrolled ? " is-scrolled" : ""}`}>{children}</header>;
+  return (
+    <div className="site-header-shell">
+      <header className={`site-header${isScrolled ? " is-scrolled" : ""}`}>{children}</header>
+    </div>
+  );
 }
