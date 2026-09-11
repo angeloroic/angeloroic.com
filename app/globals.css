@@ -33,7 +33,7 @@ a:focus-visible, summary:focus-visible {
 .eyebrow { color: var(--teal); font-size: .69rem; letter-spacing: .13em; text-transform: uppercase; }
 .site-header-shell { height: 82px; }
 .site-header { position: relative; z-index: 10; background: color-mix(in srgb, var(--background) 92%, transparent); backdrop-filter: blur(14px); }
-.site-header.is-scrolled { position: fixed; top: 0; left: 0; right: 0; }
+.site-header.is-scrolled { position: fixed; top: 0; left: 0; right: 0; background: rgba(11, 12, 14, 0.96); transition: transform 170ms ease-out; }
 .nav { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
 .site-header.is-scrolled .nav { height: 58px; }
 .wordmark { font-size: 1.5rem; font-weight: 700; letter-spacing: .12em; transition: color .2s ease; }
@@ -250,10 +250,15 @@ a:focus-visible, summary:focus-visible {
 
 @media (prefers-reduced-motion: no-preference) {
   .nav { transition: height .24s ease; }
+  .site-header.is-scrolled { animation: sticky-header-entrance 170ms ease-out both; }
   .hero > * { animation: enter .6s both; }
   .section { animation: section-enter .6s both; animation-timeline: view(); animation-range: entry 8% cover 22%; }
   .work-preview img { transition: transform .2s ease; }
   .work-preview:is(:hover, :focus-visible) img { transform: translateY(-2px); }
 }
+@media (prefers-reduced-motion: reduce) {
+  .site-header.is-scrolled { animation: none; transform: none; transition: none; }
+}
+@keyframes sticky-header-entrance { from { transform: translateY(-25%); } to { transform: translateY(0); } }
 @keyframes enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes section-enter { from { transform: translateY(12px); } to { transform: translateY(0); } }
