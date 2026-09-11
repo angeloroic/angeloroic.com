@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import roiMediaMobile from "@/public/roi-media-mobile.png";
+import { StickyHeader } from "@/components/sticky-header";
 import { roiMediaCaseStudyContent } from "@/content/roi-media-case-study";
 import type { Locale } from "@/content/site";
 
@@ -26,7 +27,7 @@ export function RoiMediaCaseStudyPage({ locale }: { locale: Locale }) {
 
   return (
     <div lang={locale}>
-      <header className="site-header">
+      <StickyHeader>
         <nav className="shell nav case-nav" aria-label="Case study navigation">
           <Link className="wordmark" href={paths.home}>ANGELO ROIC</Link>
           <div className="case-nav-side">
@@ -37,7 +38,7 @@ export function RoiMediaCaseStudyPage({ locale }: { locale: Locale }) {
             </div>
           </div>
         </nav>
-      </header>
+      </StickyHeader>
 
       <main>
         <section className="shell case-hero" aria-labelledby="case-study-title">

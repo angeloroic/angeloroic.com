@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { CaseStudyComparison } from "@/components/case-study-comparison";
+import { StickyHeader } from "@/components/sticky-header";
 import { opgMakjanicCaseStudyContent } from "@/content/opg-makjanic-case-study";
 import type { Locale } from "@/content/site";
 import afterDesktopHero from "@/public/opg-after-desktop-hero.webp";
@@ -49,7 +50,7 @@ export function OpgMakjanicCaseStudyPage({ locale }: { locale: Locale }) {
 
   return (
     <div lang={locale}>
-      <header className="site-header">
+      <StickyHeader>
         <nav className="shell nav case-nav" aria-label="Case study navigation">
           <Link className="wordmark" href={paths.home}>ANGELO ROIC</Link>
           <div className="case-nav-side">
@@ -60,7 +61,7 @@ export function OpgMakjanicCaseStudyPage({ locale }: { locale: Locale }) {
             </div>
           </div>
         </nav>
-      </header>
+      </StickyHeader>
 
       <main>
         <section className="shell case-hero" aria-labelledby="opg-case-study-title">

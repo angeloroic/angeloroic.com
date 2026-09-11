@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { caseStudyContent } from "@/content/case-study";
+import { StickyHeader } from "@/components/sticky-header";
 import type { Locale } from "@/content/site";
 
 const liveSiteUrl = "https://angeloroic.com";
@@ -14,7 +15,7 @@ export function CaseStudyPage({ locale }: { locale: Locale }) {
 
   return (
     <div lang={locale}>
-      <header className="site-header">
+      <StickyHeader>
         <nav className="shell nav case-nav" aria-label="Case study navigation">
           <Link className="wordmark" href={paths.home}>ANGELO ROIC</Link>
           <div className="case-nav-side">
@@ -25,7 +26,7 @@ export function CaseStudyPage({ locale }: { locale: Locale }) {
             </div>
           </div>
         </nav>
-      </header>
+      </StickyHeader>
 
       <main>
         <section className="shell case-hero" aria-labelledby="case-study-title">

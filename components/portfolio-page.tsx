@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FooterCopyright } from "@/components/footer-copyright";
 import { SiteStructuredData } from "@/components/site-structured-data";
+import { StickyHeader } from "@/components/sticky-header";
 import { workProjects, type Locale, type SiteContent } from "@/content/site";
 
 const contacts = {
@@ -26,7 +27,7 @@ export function PortfolioPage({
   return (
     <div lang={locale}>
       <SiteStructuredData />
-      <header className="site-header">
+      <StickyHeader>
         <nav className="shell nav" aria-label="Main navigation">
           <Link className="wordmark" href={languagePaths[locale]}>ANGELO ROIC</Link>
           <div className="nav-side">
@@ -51,7 +52,7 @@ export function PortfolioPage({
             </details>
           </div>
         </nav>
-      </header>
+      </StickyHeader>
 
       <main>
         <section className="shell hero" aria-labelledby="hero-title">
