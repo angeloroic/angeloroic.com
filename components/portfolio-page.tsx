@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FooterCopyright } from "@/components/footer-copyright";
+import { HomeLogoLink } from "@/components/home-logo-link";
 import { SiteStructuredData } from "@/components/site-structured-data";
 import { StickyHeader } from "@/components/sticky-header";
 import { workProjects, type Locale, type SiteContent } from "@/content/site";
@@ -29,7 +30,7 @@ export function PortfolioPage({
       <SiteStructuredData />
       <StickyHeader>
         <nav className="shell nav" aria-label="Main navigation">
-          <Link className="wordmark" href={languagePaths[locale]}>ANGELO ROIC</Link>
+          <HomeLogoLink href={languagePaths[locale]}>ANGELO ROIC</HomeLogoLink>
           <div className="nav-side">
             <div className="nav-links">
               <a href="#about">{content.nav.about}</a>
